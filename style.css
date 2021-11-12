@@ -1,0 +1,140 @@
+/* <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  /* Neutral colors */
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+
+  /* Primary colors */
+  --Pale-blue: hsl(225, 63%, 19%);
+  --Bright-blue: hsl(245, 75%, 52%);
+}
+
+body {
+  /* background: var(--Pale-blue); */
+  background: var(--Desaturated-blue);
+  font-family: "Red Hat Display", sans-serif;
+}
+
+/* h1,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  padding: 15px;
+  margin: 10px;
+}
+.order-image {
+  border-radius: 25px 25px 0 0;
+  width: 100%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  display: block;
+}
+.order {
+  border-radius: 0 0 20px 20px;
+  /* width: 100%; */
+  background: white;
+  /* width: 100%; */
+  margin-bottom: 0;
+}
+.order h1 {
+  padding: 30px 38px 20px 38px;
+  /* margin: 20px; */
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.order p {
+  padding: 0 37.5px;
+  /* margin: 10px; */
+  margin-bottom: 20px;
+  line-height: 1.95;
+  font-size: 0.95rem;
+  color: rgba(92, 90, 90, 0.6);
+  font-weight: 600;
+  text-align: center;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--Very-pale-blue);
+  /* padding: 0.85rem;
+  margin: 1.1rem; */
+  border-radius: 15px;
+  padding: 10px;
+  margin: 15px;
+  margin-bottom: 25px;
+}
+.plan h3 {
+  line-height: 1.5;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin: 10px;
+}
+.plan a {
+  color: var(--Bright-blue);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+span {
+  opacity: 0.5;
+  font-size: 0.9rem;
+}
+a {
+  text-decoration: none;
+  /* margin-top: 25px; */
+  /* font-size: 0.97rem; */
+}
+.btn {
+  background: var(--Bright-blue);
+  color: azure;
+  padding: 10px;
+  margin: 20px 20px 5px 20px;
+  display: block;
+  max-width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+  font-size: 18px;
+  /* box-shadow: 0 15px var(--Pale-blue); */
+  align-items: center;
+  text-align: center;
+}
+.payment a {
+  font-size: 0.94rem;
+  padding: 15px;
+}
+.payment p {
+  text-align: center;
+  font-size: 0.89rem;
+  font-weight: 700;
+  margin: 10px 10px 15px 10px;
+  padding: 10px 15px 25px 10px;
+}
+@media screen and (min-width: 378px) {
+  body {
+    background: url(./images/pattern-background-desktop.svg) repeat;
+    background-size: cover;
+  }
+  .container {
+    margin: 30px auto;
+    width: 376px;
+  }
+}
